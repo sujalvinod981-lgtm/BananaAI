@@ -39,7 +39,7 @@
 | Ripeness classification | Overripe · Ripe · Rotten (3 classes) |
 | Confidence gating | Predictions below 40% confidence are withheld |
 | Image integrity check | Corrupted or unreadable files are caught before inference |
-| Fast inference | Persistent Flask ML server keeps model in memory (~1–2 s per prediction) |
+| Fast inference | Persistent Flask ML server keeps model in memory (~10–15 s per prediction) |
 | Fallback inference | If Flask server is offline, Node.js spawns predict.py automatically |
 | Scan history | Last 20 predictions per user stored in SQLite |
 | Auth | Token-based registration and login with bcrypt password hashing |
